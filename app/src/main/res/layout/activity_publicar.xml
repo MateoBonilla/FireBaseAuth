@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_publicar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mateo.Firebasepro.PublicarActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Confesion "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtPersonaname"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:hint="Nick" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:layout_below="@+id/txtPersonaname"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="18dp"
+            android:id="@+id/txtEdad"
+            android:hint="Edad" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:ems="10"
+            android:layout_marginTop="19dp"
+            android:id="@+id/txtConfesion"
+            android:layout_below="@+id/txtEdad"
+            android:layout_alignParentStart="true"
+            android:hint="Escribe aqui tu confesion"
+            android:layout_weight="0.78" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:layout_marginTop="20dp"
+            android:id="@+id/txttelefono"
+            android:hint="Telefono(opcional)"
+            android:layout_below="@+id/txtConfesion"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="Publicar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Publicar"
+            android:id="@+id/buttonPublicar"
+            android:elevation="1dp" />
+
+    </LinearLayout>
+</RelativeLayout>
